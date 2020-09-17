@@ -1,0 +1,191 @@
+.homeBox {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #f2151e;
+        display: flex;
+
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 40px;
+            margin: 10px
+        }
+
+        .iconfont {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 20px;
+            color: rgb(104, 101, 101);
+            position: absolute;
+            left: 18%;
+        }
+
+        input {
+            width: 70%;
+            height: 30px;
+            padding-left: 40px;
+            border-radius: 20px;
+            background-color: #eeeeee;
+        }
+    }
+
+    .swiper {
+        background-color: #f2151e;
+
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 160px;
+        background-color: transparent;
+
+
+
+        .swiper-wrapper {
+            width: 80%;
+            height: 100%;
+
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 5px;
+
+                }
+            }
+
+        }
+    }
+
+    .content {
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 160px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding-top: 50px;
+
+        .navBox {
+            width: 100%;
+            height: 160px;
+            padding-bottom: 10px;
+
+        }
+
+        .nav {
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            margin-top: 10px;
+            margin-left: 20px;
+
+            .nav-item {
+                width: 20%;
+                height: 72px;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+        }
+
+        ::-webkit-scrollbar {
+            /*滚动条整体样式*/
+            width: 4px;
+            /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+
+        .goods {
+            width: 100%;
+
+            .navBar {
+                width: 100%;
+                height: 50px;
+                display: flex;
+
+                .navItem {
+                    display: inline-block;
+                    width: 80px;
+                    height: 50px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-align: center;
+                    line-height: 50px;
+
+                }
+            }
+
+            .goodsList {
+                width: 100%;
+                background-color: rgb(247, 236, 236);
+                margin-bottom: 60px;
+                display: flex;
+                padding: 10px 0 10px 10px;
+                flex-wrap: wrap;
+
+
+                .goodsItem {
+                    width: 47%;
+                    height: 250px;
+                    margin-right: 10px;
+                    background-color: #fff;
+                    margin-bottom: 10px;
+                    border-radius: 5%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 150px;
+
+                    }
+
+                    .goodsDetail {
+                        margin: 10px 0 5px 10px;
+
+                        .title {
+                            font-size: 14px;
+                            letter-spacing: 2px;
+                        }
+
+                        .text {
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            font-weight: 200;
+                            margin: 10px 0;
+                        }
+
+                        .price {
+                            color: #f2151e;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,104 @@
+.personalOrder {
+    width: 100%;
+
+    .navBox {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: #ffffff;
+
+        .navItem {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .active {
+            color: #e2bb5b;
+            border-bottom: 4px solid #e2bb5b;
+        }
+    }
+
+    .orderList {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        letter-spacing: 2px;
+
+        .orderItem {
+            width: 90%;
+            margin: 10px auto;
+            height: 195px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .orderTop {
+                width: 90%;
+                margin: 0 auto;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .orderMid {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    width: 110px;
+                    height: 105px;
+                    background-size: cover;
+                    border-radius: 10px;
+                }
+
+                .orderInfo {
+                    margin-left: 10px;
+                    width: 100%;
+
+                    .priceNum {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 40px;
+
+                        .price {
+                            color: #d54f34;
+                        }
+                    }
+                }
+            }
+
+            .btnGroup {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-end;
+
+                .btnStyle {
+                    margin-right: 20px;
+                    margin-top: 5px;
+                    width: 80px;
+                    height: 25px;
+                    border: 1px solid #e2bb5b;
+                    background-color: transparent;
+                    border-radius: 30px;
+                    color: hsl(44, 9%, 50%);
+                }
+            }
+        }
+    }
+
+    .noTip {
+        width: 100%;
+        height: 200px;
+        color: #6f6f6f;
+        letter-spacing: 1px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

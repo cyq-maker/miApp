@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React App</title>
+</head>
+
+<body>
+  <!-- rem 自适应 （优先处理）-->
+  <script>
+    (function () {
+      let evt = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+      var docEl = document.documentElement
+
+      // set 1rem = viewWidth / 10
+      function setRemUnit() {
+        let deviceW = docEl.clientWidth,
+          designW = 750;
+        var rem = deviceW / designW * 100;
+        if (deviceW >= designW) rem = 100;
+        docEl.style.fontSize = rem + 'px';
+      }
+
+      setRemUnit();
+
+      // reset rem unit on page resize
+      window.addEventListener(evt, setRemUnit);
+
+    })();
+  </script>
+
+  <div id="root"></div>
+
+  <!-- 不支持es6module或者commonjs规范的js文件 （不会合并） -->
+  <script src="%PUBLIC_URL%/utils.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+.categoryBox {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+
+    .header {
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .iconfont {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 20px;
+            color: rgb(104, 101, 101);
+            position: absolute;
+            left: 8%;
+        }
+
+        input {
+            width: 80%;
+            height: 25px;
+            padding-left: 40px;
+            border-radius: 20px;
+            background-color: #eeeeee;
+        }
+    }
+
+    .cg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .cgNav {
+            width: 90px;
+            background-color: #fff;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+
+
+
+            .navItem {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .navActive {
+                    width: 60px;
+                    height: 24px;
+                    border-radius: 12px;
+                    color: #fff;
+                    background-color: rgb(223, 20, 15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+
+
+        }
+
+        .cgPro {
+            width: 100%;
+            height: 100%;
+
+            background-color: #eeeeee;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+
+
+            .proArea {
+                width: 90%;
+
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                padding-bottom: 10px;
+
+
+                .title {
+                    margin: 5px;
+                }
+
+                .proItem {
+                    padding: 5px;
+                    margin: 5px 0;
+                    background-color: #fff;
+
+                    .cgDetail {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+
+                        .cgItem {
+                            width: 33.333333%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            img {
+                                width: 76px;
+                                height: 76px;
+                            }
+
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        ::-webkit-scrollbar {
+            /*隐藏滚轮*/
+            // width: 0;
+        }
+    }
+}

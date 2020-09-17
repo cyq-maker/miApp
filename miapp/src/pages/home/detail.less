@@ -1,0 +1,162 @@
+.detailBox {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    .topBtn {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(207, 202, 202, 0.808);
+            border-radius: 50%;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(248, 244, 244, 0.945);
+        }
+    }
+
+
+    .detailSwiper {
+        width: 100%;
+        height: 450px;
+    }
+
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .swiper-pagination {
+        width: 100%;
+        height: 20px;
+    }
+
+    .info {
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+
+        .price {
+            width: 100%;
+            height: 30px;
+
+            .present {
+                color: red;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+
+            .origin {
+                margin-left: 5px;
+                text-decoration: line-through;
+            }
+        }
+
+        .title {
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 10px 0;
+        }
+
+        .desc {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+
+    .desImg {
+        width: 100%;
+        padding-bottom: 50px;
+
+
+        img {
+            width: 100%;
+            background-size: cover;
+        }
+    }
+
+    .bottomBtn {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        padding: 0 5px;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        .cart {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .iconfont {
+                font-size: 20px;
+            }
+
+            .num {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #d61614;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 5px;
+                top: 2px;
+            }
+        }
+
+        .btnGroup {
+            height: 40px;
+            width: 250px;
+            margin: auto 0;
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 20px;
+            overflow: hidden;
+
+            .addCart,
+            .buyNow {
+                width: 124px;
+                height: 40px;
+                color: #fffdf7;
+                font-size: 14px;
+
+            }
+
+            .addCart {
+                background-color: #e2bb5b;
+            }
+
+            .buyNow {
+                background-color: #d61614;
+            }
+        }
+
+
+    }
+}
